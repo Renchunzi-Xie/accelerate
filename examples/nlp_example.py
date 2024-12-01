@@ -120,8 +120,6 @@ def training_function(config, args):
     batch_size = int(config["batch_size"])
 
     metric = evaluate.load("glue", "mrpc")
-    import pdb
-    pdb.set_trace()
 
     # If the batch size is too big we use gradient accumulation
     gradient_accumulation_steps = 1
